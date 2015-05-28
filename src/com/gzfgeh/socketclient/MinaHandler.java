@@ -9,8 +9,8 @@ public class MinaHandler extends IoHandlerAdapter {
 	public void messageReceived(IoSession session, Object message)
 			throws Exception {
 		String msg = (String) message;
-		System.out.println("getMsg : " + msg);
-		session.write("server reply : " + msg);
+		//session.write("client reply : " + msg);
+		System.out.println("client received msg : " + msg);
 	}
 
 	public void messageSent(IoSession session, Object message) throws Exception {
